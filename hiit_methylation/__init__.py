@@ -10,7 +10,7 @@ __author__ = "HIIT Methylation Analysis Team"
 
 # Core module imports
 from .data.preprocessing import preprocess_methylation_data
-from .data.loaders import load_methylation_data
+from .data.loaders import load_methylation_data, create_sample_data
 from .models.classifiers import HIITMethylationClassifier
 from .models.regressors import HIITMethylationRegressor
 from .utils.metrics import methylation_metrics
@@ -25,6 +25,7 @@ __all__ = [
     'preprocess_methylation_data',
     'preprocess',
     'load_methylation_data',
+    'create_sample_data',
     'HIITMethylationClassifier',
     'HIITMethylationRegressor',
     'methylation_metrics',
