@@ -1,0 +1,131 @@
+# ====================
+# Data Files
+# ====================
+# Raw data (use GEO reference instead)
+data/raw/*.txt
+data/raw/*.gz
+data/raw/*.pkl
+
+# Processed data (contains research results)
+data/processed/*.pkl
+data/processed/*.csv
+data/processed/features/
+
+# Keep README files
+!data/README.md
+!data/raw/README.md
+!data/processed/README.md
+
+# Keep directory structure
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/figures/.gitkeep
+
+# ====================
+# Trained Models
+# ====================
+models/*.pkl
+models/*.joblib
+models/binary/
+models/multiclass/
+!models/README.md
+
+# ====================
+# Results (published in paper)
+# ====================
+results/**
+!results/README.md
+
+# ====================
+# Figures (regenerate from code)
+# ====================
+data/figures/**/*.png
+data/figures/**/*.pdf
+data/figures/**/*.svg
+
+# ====================
+# Logs
+# ====================
+*.log
+notebooks/**/*.log
+notebooks/catboost_info/
+
+# ====================
+# Python
+# ====================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ====================
+# Jupyter Notebook
+# ====================
+.ipynb_checkpoints/
+.virtual_documents/
+*/.ipynb_checkpoints/*
+
+# ====================
+# IDE
+# ====================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ====================
+# OS Files
+# ====================
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+
+# ====================
+# R Files
+# ====================
+.RData
+.Rhistory
+.Rproj.user
+
+# ====================
+# Environment
+# ====================
+.env
+*.env
+.venv/
+venv/
+ENV/
+
+# ====================
+# Archive (old versions)
+# ====================
+archive/
+
+# ====================
+# Testing
+# ====================
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+coverage.xml
+*.cover
